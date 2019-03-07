@@ -1,0 +1,5 @@
+C:\Users\nasbo\source\repos\Pupita\Pupita.Core\bin\Debug\netstandard2.0\Pupita.Domain.dll
+C:\Users\nasbo\source\repos\Pupita\Pupita.Core\obj\Debug\netstandard2.0\Pupita.Core.csprojAssemblyReference.cache
+C:\Users\nasbo\source\repos\Pupita\Pupita.Core\obj\Debug\netstandard2.0\Pupita.Core.csproj.CoreCompileInputs.cache
+C:\Users\nasbo\source\repos\Pupita\Pupita.Core\obj\Debug\netstandard2.0\Pupita.Core.AssemblyInfoInputs.cache
+C:\Users\nasbo\source\repos\Pupita\Pupita.Core\obj\Debug\netstandard2.0\Pupita.Core.AssemblyInfo.cs
