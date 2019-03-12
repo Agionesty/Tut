@@ -9,5 +9,6 @@ namespace Pupita.Domain.Entities
         public Guid Id { get; set; }
         public string Title { get; set; }
         public Guid IdAlbum { get; set; }
+        public Guid IdGenre { get; set; }
     }
 }

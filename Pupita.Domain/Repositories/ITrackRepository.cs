@@ -1,4 +1,5 @@
 ﻿using Pupita.Domain.Dto;
+using Pupita.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,5 +14,6 @@ namespace Pupita.Domain.Repositories
         Task<TrackDto> CreatAsync(TrackDto item);
         Task<bool> UpdateAsync(TrackDto item);
         Task<bool> DeleteAsync(Guid Id);
+        Task<TrackDto> GetBySearch(string artistname, string album);
     }
 }

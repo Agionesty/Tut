@@ -17,7 +17,7 @@ namespace Pupita.API.Controllers
         {
             _repo = repo;
         }
-
+        [HttpGet]
         public async Task<IActionResult> Get() //обращаемся ы репозиторий, чтобы оттуда пришли данные ВСЕ
         {
             try
@@ -85,5 +85,7 @@ namespace Pupita.API.Controllers
                 return StatusCode(500, ex);
             }
         }
+
+
     }
 }

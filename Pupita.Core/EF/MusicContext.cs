@@ -11,6 +11,8 @@ namespace Pupita.Core.EF
        public  DbSet<Album> Albums { get; set; }
         public DbSet<Artist> Artists { get; set; }
        public DbSet<Track> Tracks { get; set; }
+        public DbSet<Genre> Genres { get; set; }
+        public DbSet<PlayList> PlayLists { get; set; }
 
 
         public MusicContext(DbContextOptions<MusicContext> options) : base(options)

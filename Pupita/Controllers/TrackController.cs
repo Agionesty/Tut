@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Pupita.Domain.Dto;
+using Pupita.Domain.Entities;
 using Pupita.Domain.Repositories;
 using System;
 using System.Collections.Generic;
@@ -17,7 +18,7 @@ namespace Pupita.API.Controllers
         {
             _repo = repo;
         }
-
+        [HttpGet] 
         public async Task<IActionResult> Get() //обращаемся ы репозиторий, чтобы оттуда пришли данные ВСЕ
         {
             try
@@ -85,6 +86,20 @@ namespace Pupita.API.Controllers
             }
         }
 
+        [HttpGet("{artistname}&&{albumname}")]
+
+        public async Task<IActionResult> GetBySearch (string artistname,string albumname)
+        {
+            try
+            {
+                return Ok(await _repo.GetBySearch(artistname,albumname));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex);
+            }
+        }
+       
 
 
     }

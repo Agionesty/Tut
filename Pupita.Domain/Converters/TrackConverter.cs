@@ -15,7 +15,7 @@ namespace Pupita.Domain.Converters
             {
                 Id = track.Id,
                 Title = track.Title,
-                IdAlbum = track.IdAlbum
+                IdAlbum = track.IdAlbum,
                 
             };
         }

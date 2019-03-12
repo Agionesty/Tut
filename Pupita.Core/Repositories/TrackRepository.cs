@@ -1,7 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Pupita.Core.EF;
 using Pupita.Domain.Converters;
 using Pupita.Domain.Dto;
+using Pupita.Domain.Entities;
 using Pupita.Domain.Repositories;
 using System;
 using System.Collections.Generic;
@@ -10,12 +12,12 @@ using System.Threading.Tasks;
 
 namespace Pupita.Core.Repositories
 {
-    public class TrackRepository: ITrackRepository
+    public class TrackRepository : ITrackRepository
     {
         private readonly MusicContext _context;
         private readonly IAlbumRepository _albumrepos;
 
-        public TrackRepository (MusicContext context, IAlbumRepository albumrepos)
+        public TrackRepository(MusicContext context, IAlbumRepository albumrepos)
         {
             _context = context;
             _albumrepos = albumrepos;
@@ -60,5 +62,9 @@ namespace Pupita.Core.Repositories
             return true;
         }
 
+        public async Task<TrackDto> GetBySearch(string artistname, string albumname)
+        {
+            return TrackConverter.Convert(await _context.Tracks.FindAsync(artistname, albumname));
+        }
     }
 }

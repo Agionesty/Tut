@@ -3,3 +3,10 @@ C:\Users\nasbo\source\repos\Pupita\Pupita.Core\obj\Debug\netstandard2.0\Pupita.C
 C:\Users\nasbo\source\repos\Pupita\Pupita.Core\obj\Debug\netstandard2.0\Pupita.Core.csproj.CoreCompileInputs.cache
 C:\Users\nasbo\source\repos\Pupita\Pupita.Core\obj\Debug\netstandard2.0\Pupita.Core.AssemblyInfoInputs.cache
 C:\Users\nasbo\source\repos\Pupita\Pupita.Core\obj\Debug\netstandard2.0\Pupita.Core.AssemblyInfo.cs
+C:\Users\nasbo\source\repos\Pupita\Pupita.Core\bin\Debug\netstandard2.0\Pupita.Core.deps.json
+C:\Users\nasbo\source\repos\Pupita\Pupita.Core\bin\Debug\netstandard2.0\Pupita.Core.dll
+C:\Users\nasbo\source\repos\Pupita\Pupita.Core\bin\Debug\netstandard2.0\Pupita.Core.pdb
+C:\Users\nasbo\source\repos\Pupita\Pupita.Core\bin\Debug\netstandard2.0\Pupita.Domain.pdb
+C:\Users\nasbo\source\repos\Pupita\Pupita.Core\obj\Debug\netstandard2.0\Pupita.Core.csproj.CopyComplete
+C:\Users\nasbo\source\repos\Pupita\Pupita.Core\obj\Debug\netstandard2.0\Pupita.Core.dll
+C:\Users\nasbo\source\repos\Pupita\Pupita.Core\obj\Debug\netstandard2.0\Pupita.Core.pdb

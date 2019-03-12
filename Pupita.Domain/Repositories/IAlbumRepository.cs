@@ -13,6 +13,6 @@ namespace Pupita.Domain.Repositories
         Task<AlbumDto> CreatAsync(AlbumDto item);
         Task<bool> UpdateAsync(AlbumDto item);
         Task<bool> DeleteAsync(Guid Id);
-
+        Task<AlbumDto> GetBySearch(string artistname);
     }
 }

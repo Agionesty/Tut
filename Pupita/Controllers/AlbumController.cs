@@ -5,18 +5,27 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Net.Http;
+using Microsoft.EntityFrameworkCore;
+using Pupita.Domain.Entities;
+using Pupita.Core.EF;
 
 namespace Pupita.API.Controllers
 {
     [Route("api/[controller]")]
-    public class AlbumController : Controller
+
+    public class AlbumController: Controller
     {
         private readonly IAlbumRepository _repo;
+        private readonly MusicContext _context;
         //т.к контроллер работает с репозиторием 
-        public AlbumController(IAlbumRepository repo)
+        public AlbumController(IAlbumRepository repo, MusicContext context)
         {
+            _context = context;
             _repo = repo;
         }
+        
+
         public async Task<IActionResult> Get() //обращаемся ы репозиторий, чтобы оттуда пришли данные ВСЕ
         {
             try
@@ -83,5 +92,26 @@ namespace Pupita.API.Controllers
                 return StatusCode(500, ex);
             }
         }
+
+        [HttpGet("{artistname}")]
+
+        public async Task<IActionResult> GetBySearch(string artistname)
+        {
+            try
+            {
+                return Ok(await _repo.GetBySearch(artistname));
+
+            }
+
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex);
+            }
+        }
+       
+
+
+
+
     }
 }
