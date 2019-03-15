@@ -6,6 +6,7 @@ using Pupita.Domain.Entities;
 using Pupita.Domain.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -69,10 +70,8 @@ namespace Pupita.Core.Repositories
 
         public async Task<AlbumDto> GetBySearch(string artistname)
         {
-            var album = AlbumConverter.Convert(await _context.Albums.FindAsync(artistname));
-
-            return album;
-
+            var albums = AlbumConverter.Convert( await _context.Albums.FindAsync(artistname));
+            return albums;
         }
 
     }

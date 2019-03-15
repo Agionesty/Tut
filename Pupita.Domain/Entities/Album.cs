@@ -9,6 +9,8 @@ namespace Pupita.Domain.Entities
         public Guid Id { get; set; }
         public string Title { get; set; }
         public Guid IdArtist { get; set; }
+        public string ArtistName { get; set; }
         public List<Track> Tracks { get; set; } = new List<Track>();
+        
     }
 }

@@ -15,7 +15,8 @@ namespace Pupita.Domain.Converters
             {
                 Title = album.Title,
                 Id = album.Id,
-                IdArtist = album.IdArtist
+                IdArtist = album.IdArtist,
+                ArtistName = album.ArtistName
             };
         }
 
@@ -27,7 +28,8 @@ namespace Pupita.Domain.Converters
             {
                 Title = album.Title,
                 Id = album.Id,
-                IdArtist = album.IdArtist
+                IdArtist = album.IdArtist,
+                ArtistName = album.ArtistName
             };
         }
 

@@ -54,14 +54,13 @@ namespace Pupita.API.Controllers
         }
 
         [HttpPost]
-
         public async Task<IActionResult> Post([FromBody] AlbumDto item)
         {
             try
             {
                 return Ok(await _repo.CreatAsync(item));
             }
-            catch (Exception ex) //отлавливаем ошибку, если она попадается в тру
+            catch (Exception ex) 
             {
                 return StatusCode(500, ex);
             }

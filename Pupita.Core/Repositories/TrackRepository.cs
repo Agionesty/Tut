@@ -64,7 +64,8 @@ namespace Pupita.Core.Repositories
 
         public async Task<TrackDto> GetBySearch(string artistname, string albumname)
         {
-            return TrackConverter.Convert(await _context.Tracks.FindAsync(artistname, albumname));
+            var tracks =TrackConverter.Convert(await _context.Tracks.FindAsync(artistname, albumname));
+            return tracks;
         }
     }
 }
